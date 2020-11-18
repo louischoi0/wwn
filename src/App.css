@@ -13,8 +13,91 @@
   }
 }
 
+.app-container {
+    height: 100vh;
+    flex-direction:column;
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    height: 15vh;
+    background-color: #0094a7;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+    background-color: #6ff9ff;
+}
+
+.main-searchbar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 15%;
+    background-color: #0094a7;
+}
+
+.content-tabheader {
+    display: flex;
+    flex-direction:row;
+}
+
+.main-search-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #26c6da;
+    border : 1px
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #0094a7;
+    flex-grow:4;
+    width:36%
+}
+
+.main-left {
+    display: flex;
+    flex-direction: row;
+    background-color: #0094a7;
+    width: 32%;
+}
+
+
+.main-right{
+    display: flex;
+    flex-direction: row;
+    width: 32%;
+    background-color: #0094a7;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    background-color: #26c6da;
+}
+
+
+.flex_item{
+    flex:1;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    height:10vh;
+}
+
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
