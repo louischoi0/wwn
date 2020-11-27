@@ -10,12 +10,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import LinearProgress from '@material-ui/core/LinearProgress';
 
-import ImgMediaCard from './card.js';
-import ImgMediaResultCard from './resultCard.js';
-
-function PollCard() {
-    return <ImgMediaCard />
-}
+import PollCard from './card.js';
 
 function Container() {
     const marginStyle = {
@@ -40,6 +35,9 @@ function Container() {
         height:"55px",
         marginLeft:"10px"
     }
+
+//                        <ImgMediaCard title="부먹vs찍먹" imgUrl="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimg.theqoo.net%2Fimg%2FkXMfS.gif&f=1&nofb=1" option1="부먹" option2="찍먹" openDate="2020. 10. 24" />
+//                        <ImgMediaCard title="트럼프 우세" imgUrl="https://image.chosun.com/sitedata/image/202011/04/2020110400351_0.png" option1="트럼프" option2="바이든" openDate="2020. 10. 24" />
     
 
   return (
@@ -67,8 +65,7 @@ function Container() {
                     </div>
 
                     <div class="content-tabheader">
-                        <ImgMediaCard title="부먹vs찍먹" imgUrl="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimg.theqoo.net%2Fimg%2FkXMfS.gif&f=1&nofb=1" option1="부먹" option2="찍먹" openDate="2020. 10. 24" />
-                        <ImgMediaResultCard title="트럼프 우세" imgUrl="https://image.chosun.com/sitedata/image/202011/04/2020110400351_0.png" option1="트럼프" option2="바이든" openDate="2020. 10. 24" />
+                        <PollCard />
                     </div>
                     
                 </div>
